@@ -85,8 +85,8 @@ ul {
   background-color: yellow;
 }
 .hidden {
-   display: none; 
- } 
+  display: none;
+}
 #button {
   padding: 10px 80px;
   border-radius: 10px;
@@ -134,6 +134,14 @@ ul {
   cursor: pointer;
   margin: 10px 0;
 }
+#updateButton {
+  padding: 10px 80px;
+  border-radius: 10px;
+  border: 1px solid;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px 0;
+}
 #showButton {
   padding: 10px 80px;
   border-radius: 10px;
@@ -149,4 +157,19 @@ ul {
   font-weight: 600;
   cursor: pointer;
   margin: 10px 0;
+}
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 2px;
+  padding: 20px 50px;
+  margin: 10px;
+  background-color: azure;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+#content p {
+  max-width: 100%;
 }
