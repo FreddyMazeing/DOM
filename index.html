@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 id="heading">This is the Dom Manipulation</h1>
+      <div id="container">
+        <h2>container</h2>
+        <p id="paragraph">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita,
+          dolore!
+        </p>
+        <ul id="list">
+          <li id="Item">Item:1</li>
+          <li id="Item">Item:2</li>
+          <li id="Item">Item:3</li>
+        </ul>
+        <button id="button">Click</button>
+      </div>
+
+      <!-- Using parentNode -->
+      <ul id="itemList">
+        <li>Item 1 <button class="removeBtn">Remove</button></li>
+        <li>Item 2 <button class="removeBtn">Remove</button></li>
+        <li>Item 3 <button class="removeBtn">Remove</button></li>
+      </ul>
+
+      <!--  -->
+
+      <!-- Using childNode -->
+      <ul id="itemLists">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+      <button id="toggleButton">Toggle Highlight</button>
+      <button id="hideButton">Hide Items</button>
+      <button id="showButton">Show Items</button>
+
+      <!-- firstChild and lastChild -->
+      <ul id="itemListss">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+      </ul>
+      <button id="highlightButton">Highlight First and Last</button>
+
+      <!-- nextSibling & previousSibling -->
+      <ul id="MyItemList">
+        <li>Item 1</li>
+        <li class="hidden">Item 2</li>
+        <li class="hidden">Item 3</li>
+        <li class="hidden">Item 4</li>
+        <li class="hidden">Item 5</li>
+      </ul>
+      <button id="prevButton">Previous</button>
+      <button id="nextButton">Next</button>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
