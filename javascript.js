@@ -109,6 +109,9 @@ myContainer.addEventListener("mouseover", function () {
 /*deeply explain parentNode in DOM Manipulation, 
   giving a realworld example where it is used */
 
+// ......................................
+
+
 /*    
   1. parentNode - Gets the parent node
                 - allows us to access the parent of a specific element.
@@ -144,6 +147,9 @@ removeButtons.forEach((button) => {
     listItem.parentNode.removeChild(listItem);
   });
 });
+
+// ......................................
+
 
 /*
   2. childNodes - retrieves all child nodes(including text nodes)
@@ -218,6 +224,9 @@ showButton.addEventListener("click", function () {
   });
 });
 
+// ......................................
+
+
 /*   
   3. firstChild / lastChild - Gets the first/last child of a specified element, respectively
             
@@ -255,6 +264,9 @@ highlightButton.addEventListener("click", function () {
     lastChild.classList.add("highlight");
   }
 });
+
+// ......................................
+
 
 /*
    4. nextSibling / previousSibling - Navigates to the next/previous sibling node
@@ -327,7 +339,9 @@ prevButton.addEventListener("click", function () {
   }
 });
 
-// innerHTML
+// ......................................
+
+// 5.  innerHTML
 /*
   A property used to set or get the HTML content inside an element.
   - allows us to dynamically change the content of an element by modifying its HTML structure.
@@ -362,3 +376,8 @@ updateButton.addEventListener("click", function () {
   
   `;
 });
+
+// ......................................
+
+
+// 6. setAttribute("attribute", "value")
