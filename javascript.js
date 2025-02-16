@@ -32,6 +32,10 @@ Document
 */
 const myHeading = document.getElementById("heading");
 myHeading.textContent = "DOM Manipulation in Action!";
+myHeading.textContent = `This is me back to manipulating the DOM`;
+
+const myDescription = document.getElementById("description");
+myDescription.textContent = `I have changed description using DOM Manipulation`;
 
 const myButton = document.getElementById("button");
 myButton.textContent = "I'm Button";
@@ -52,7 +56,7 @@ myParagraph.textContent =
   nextSibling / previousSibling → Navigates between siblings.
 
 */
-//Examle:
+//Example:
 
 const myElement = document.getElementById("heading");
 console.log(myElement.parentNode);
@@ -111,7 +115,6 @@ myContainer.addEventListener("mouseover", function () {
 
 // ......................................
 
-
 /*    
   1. parentNode - Gets the parent node
                 - allows us to access the parent of a specific element.
@@ -121,7 +124,7 @@ myContainer.addEventListener("mouseover", function () {
      Dfntn: parentNode - read-only property that  returns the parent node of the 
                          specified node in the DOM tree.
      
-     Usage: allows us yo access & manipulate the parent of a specific element.
+     Usage: allows us to access & manipulate the parent of a specific element.
           : which can be useful for tasks like
           - removing an element,
           - changing the parent's style,
@@ -150,7 +153,6 @@ removeButtons.forEach((button) => {
 
 // ......................................
 
-
 /*
   2. childNodes - retrieves all child nodes(including text nodes)
                 - this property returns a list (NodeList) of all child nodes of
@@ -164,7 +166,7 @@ removeButtons.forEach((button) => {
     Dfn: childNodes -is a read-only property that returns a live NodeList
                      of all child nodes of the specified nodes.
 
-    Usage: all us to acces and manipulate the children of a specific element.
+    Usage:  used to access and manipulate the children of a specific element.
           - which can be usefull for tasks such as iterating over child
             elements, modifying their contents, or removing them. 
                    
@@ -226,7 +228,6 @@ showButton.addEventListener("click", function () {
 
 // ......................................
 
-
 /*   
   3. firstChild / lastChild - Gets the first/last child of a specified element, respectively
             
@@ -266,7 +267,6 @@ highlightButton.addEventListener("click", function () {
 });
 
 // ......................................
-
 
 /*
    4. nextSibling / previousSibling - Navigates to the next/previous sibling node
@@ -378,6 +378,5 @@ updateButton.addEventListener("click", function () {
 });
 
 // ......................................
-
 
 // 6. setAttribute("attribute", "value")
